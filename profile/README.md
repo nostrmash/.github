@@ -13,10 +13,12 @@ The public explorer is [nostrmash.com](https://nostrmash.com). The license is th
 | --- | --- |
 | [nostrmash](https://github.com/nostrmash/nostrmash) | Go-based, Docker-native Nostr ingestion and indexing platform. Durable raw events in Postgres, rebuildable read models, and a Primal-compatible API for existing clients. |
 | [nostrmash-web](https://github.com/nostrmash/nostrmash-web) | Public explorer for NostrMash. Search notes and profiles, and browse trends, relays, and network stats. |
+| [nostr-read-gateway](https://github.com/nostrmash/nostr-read-gateway) | Standalone Primal-compatible read gateway with configurable upstreams. |
+| [nostr-publish-gateway](https://github.com/nostrmash/nostr-publish-gateway) | Standalone HTTP-to-Nostr publish gateway. Private while source provenance is reviewed. |
 
-The explorer reads the NostrMash API and does not talk to relays itself. SmartFlowSocial's
-[cache worker](https://github.com/smartflowsocial/smartflowsocial-cache-worker) calls that API
-before it falls back to Primal.
+The explorer reads the NostrMash API and does not talk to relays itself.
+
+NostrMash maintains several standalone Nostr developer utilities. They can be used independently of NostrMash Core.
 
 ## Start
 
